@@ -86,7 +86,7 @@ set guioptions-=L "gui的左边的滑动条
 set laststatus=2 " 默认显示状态栏
 
 "set nocursorline
-set guifont=Source\ Code\ Pro:h12
+set guifont=Source\ Code\ Pro:h14
 "set guifont=YaHei\ Mono:h12
 
 syntax on " hight syntax
