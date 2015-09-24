@@ -31,6 +31,19 @@ Plugin 'jellybeans.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 
+" Syntax
+Plugin 'othree/html5.vim'
+Plugin 'othree/html5-syntax.vim'
+Plugin 'isRuslan/vim-es6'
+Plugin 'hallison/vim-markdown'
+
+" Html tools
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-ragtag'
+Plugin 'MatchTag'
+Plugin 'maksimr/vim-jsbeautify'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -107,6 +120,62 @@ set smartindent " 智能自动缩进
 set scrolloff=3  " 上下可视行数
 set showmatch  "显示括号配对情况
 set shortmess=atl  "启动时不显示 捐赠提示
+
+" display extra whitespace
+set list listchars=tab:\|\ ,extends:>,precedes:<
+
+" Nerdtree
+" {{{ NERDtree 文件管理器
+" 让Tree把自己给装饰得多姿多彩漂亮点
+let NERDChristmasTree=1
+" 控制当光标移动超过一定距离时，是否自动将焦点调整到屏中心
+let NERDTreeAutoCenter=1
+" 指定书签文件
+let NERDTreeBookmarksFile=$VIMFILES.'\NERDTree_bookmarks'
+" 指定鼠标模式(1.双击打开 2.单目录双文件 3.单击打开)
+let NERDTreeMouseMode=2
+" 是否默认显示书签列表
+let NERDTreeShowBookmarks=1
+" 是否默认显示文件
+let NERDTreeShowFiles=1
+" 是否默认显示行号
+let NERDTreeShowLineNumbers=0
+" 窗口位置（'left' or 'right'）
+let NERDTreeWinPos='left'
+" 窗口宽度
+let NERDTreeWinSize=31
+nnoremap <Leader>tt :NERDTree<CR>
+"}}}
+
+" {{{ The-NERD-Commenter 注释代码用的，以下映射已写在插件中
+let NERDMenuMode = 0
+" <Leader>ca 在可选的注释方式之间切换，比如C/C++ 的块注释/* */和行注释//
+" <Leader>cc 注释当前行
+" <Leader>cs 以”性感”的方式注释
+" <Leader>cA 在当前行尾添加注释符，并进入Insert模式
+" <Leader>cu 取消注释
+" <Leader>cm 添加块注释
+" }}}
+
+" {{{ vim-jsbeautify  need nodejs 优化html/js/js代码，并不是简单的缩进噢
+let g:config_Beautifier = {
+			\ 'js' : {
+				\ 'indent_size' : 4,
+				\ 'indent_style' : 'tab',
+				\ },
+			\ 'css' : {
+				\ 'indent_size' : 4,
+				\ 'indent_style' : 'tab',
+				\ },
+			\ 'html' : {
+				\ 'indent_size' : 4,
+				\ 'indent_style' : 'tab',
+				\ }
+			\ }
+autocmd FileType javascript noremap <silent> <Leader>js :call JsBeautify()<cr>
+autocmd FileType html noremap <silent> <Leader>js :call HtmlBeautify()<cr>
+autocmd FileType css,less noremap <silent> <Leader>js :call CSSBeautify()<cr>
+" }}}
 
 
 " Key mappings
