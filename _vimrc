@@ -43,6 +43,13 @@ Plugin 'tpope/vim-ragtag'
 Plugin 'MatchTag'
 Plugin 'maksimr/vim-jsbeautify'
 
+if has("win64")
+  Bundle 'snakeleon/YouCompleteMe-x64'
+elseif has("win32")
+  Bundle 'snakeleon/YouCompleteMe-x86'
+else
+  Bundle 'Valloric/YouCompleteMe'
+endif
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
