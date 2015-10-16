@@ -13,7 +13,7 @@ if has("unix")
   set fileformats=unix,mac,dos
   let $VIMFILES= $HOME."/.vim"
 else
-  set fileformats=dos,unix,mac
+  set fileformats=unix,mac,dos
   let $VIMFILES = $VIM."/vimfiles"
 end
 
@@ -112,7 +112,7 @@ set guifont=Source\ Code\ Pro:h14
 syntax on " hight syntax
 set nobackup " Close backup
 set nowritebackup
-set autochdir
+"set autochdir
 set ignorecase " ignore case on search
 set nowrapscan
 set incsearch 
