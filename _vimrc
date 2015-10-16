@@ -43,6 +43,10 @@ Plugin 'tpope/vim-ragtag'
 Plugin 'MatchTag'
 Plugin 'maksimr/vim-jsbeautify'
 
+" Helper tools
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'Raimondi/delimitMate'
+
 if has("win64")
   Bundle 'snakeleon/YouCompleteMe-x64'
 elseif has("win32")
@@ -184,6 +188,13 @@ autocmd FileType html noremap <silent> <Leader>js :call HtmlBeautify()<cr>
 autocmd FileType css,less noremap <silent> <Leader>js :call CSSBeautify()<cr>
 " }}}
 
+" YouCompleteMe 
+let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
+let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<c-p', '<Up>']
 
 " Key mappings
 :imap jj <Esc>
