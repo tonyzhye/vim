@@ -138,7 +138,6 @@ set shortmess=atl  "启动时不显示 捐赠提示
 set list listchars=tab:\|\ ,extends:>,precedes:<
 
 " Nerdtree
-" {{{ NERDtree 文件管理器
 " 让Tree把自己给装饰得多姿多彩漂亮点
 let NERDChristmasTree=1
 " 控制当光标移动超过一定距离时，是否自动将焦点调整到屏中心
@@ -158,7 +157,6 @@ let NERDTreeWinPos='left'
 " 窗口宽度
 let NERDTreeWinSize=25
 nnoremap <Leader>tt :NERDTree<CR>
-"}}}
 
 let NERDMenuMode = 0
 
