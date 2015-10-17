@@ -120,6 +120,7 @@ set nowritebackup
 "set autochdir
 set ignorecase " ignore case on search
 set nowrapscan
+set nowrap
 set incsearch 
 set hlsearch
 set mouse=a
