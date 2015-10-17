@@ -107,6 +107,9 @@ set guioptions-=r "gui的右边的滑动条
 set guioptions-=L "gui的左边的滑动条
 " set guioptions-=m "gui的菜单
 " set showtabline=0 "Tab栏
+
+" Customize status bar
+:set statusline=%F%m%r%h%w\ %l:%v\ %{&ff}\ %p%%
 set laststatus=2 " 默认显示状态栏
 
 "set nocursorline
