@@ -172,6 +172,7 @@ let g:ycm_key_list_previous_completion = ['<c-p', '<Up>']
 
 " session
 let g:session_autoload = 'no'
+let g:session_autosave = 'no'
 
 "statusline setup
 "set statusline =%#identifier#
