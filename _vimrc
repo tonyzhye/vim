@@ -170,6 +170,9 @@ let g:ycm_complete_in_strings = 1
 let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<c-p', '<Up>']
 
+" session
+let g:session_autoload = 'no'
+
 "statusline setup
 "set statusline =%#identifier#
 set statusline+=[%t]    "tail of the filename
