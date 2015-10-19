@@ -47,6 +47,8 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'vim-scripts/bufexplorer.zip'
 Plugin 'vim-scripts/mru.vim'
 Plugin 'vim-scripts/FavEx'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
 
 if has("win64")
   Bundle 'snakeleon/YouCompleteMe-x64'
