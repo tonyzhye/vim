@@ -36,6 +36,7 @@ Plugin 'othree/html5.vim'
 Plugin 'othree/html5-syntax.vim'
 Plugin 'isRuslan/vim-es6'
 Plugin 'hallison/vim-markdown'
+Plugin 'mxw/vim-jsx'
 
 " Html tools
 Plugin 'tpope/vim-ragtag'
@@ -173,6 +174,9 @@ let g:ycm_key_list_previous_completion = ['<c-p', '<Up>']
 " session
 let g:session_autoload = 'no'
 let g:session_autosave = 'no'
+
+" Allow JSX in normal JS files
+let g:jsx_ext_required = 0 
 
 "statusline setup
 "set statusline =%#identifier#
