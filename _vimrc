@@ -36,6 +36,7 @@ Plugin 'othree/html5.vim'
 Plugin 'othree/html5-syntax.vim'
 Plugin 'isRuslan/vim-es6'
 Plugin 'hallison/vim-markdown'
+Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
 " Html tools
@@ -83,7 +84,7 @@ let g:lightline = {
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-"set smarttab
+set smarttab
 set expandtab
 set autoindent
 set backspace=indent,eol,start  " 让退格键和 Delete 键支持删除回车符
