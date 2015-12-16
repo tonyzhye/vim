@@ -37,6 +37,7 @@ Plugin 'othree/html5-syntax.vim'
 Plugin 'isRuslan/vim-es6'
 Plugin 'hallison/vim-markdown'
 Plugin 'pangloss/vim-javascript'
+Plugin 'genoma/vim-less'
 Plugin 'mxw/vim-jsx'
 
 " Html tools
