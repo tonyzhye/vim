@@ -39,6 +39,7 @@ Plugin 'hallison/vim-markdown'
 Plugin 'pangloss/vim-javascript'
 Plugin 'genoma/vim-less'
 Plugin 'mxw/vim-jsx'
+Plugin 'posva/vim-vue'
 
 " Html tools
 Plugin 'tpope/vim-ragtag'
