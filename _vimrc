@@ -40,6 +40,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'genoma/vim-less'
 Plugin 'mxw/vim-jsx'
 Plugin 'posva/vim-vue'
+Plugin 'rust-lang/rust.vim'
 
 " Html tools
 Plugin 'tpope/vim-ragtag'
