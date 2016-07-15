@@ -11,7 +11,7 @@ autocmd!
 " vimfile settings
 if has("unix")
   set fileformats=unix,mac,dos
-  let $VIMFILES= $HOME."/.vim"
+  let $VIMFILES= $HOME."/.vim/vimfiles"
 else
   set fileformats=unix,mac,dos
   let $VIMFILES = $VIM."/vimfiles"
