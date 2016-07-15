@@ -8,7 +8,7 @@ My vimrc env
 
 ### Clone vundle from submodule in shell
 ``` sh
-git submodule update --init
+git submodule update --init --recursive
 ```
 ### Open vim and install bundles
 ``` sh
