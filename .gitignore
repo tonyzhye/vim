@@ -1,4 +1,5 @@
 *.swp
 _vim_mru_files
 vim74/*
+vim80/*
 vimfiles/*
